@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Payment Form</h1>
+      <fieldset>
+        <legend><h2>Contact Details</h2></legend>
+        <p>Name :<input type="text" name="fname " id="" required/></p>
+
+        <fieldset>
+          <legend>Gender</legend>
+          <p>Male :<input type="radio" name="gender " id="male" required/></p>
+          <p>Female :<input type="radio" name="gender " id="female" required/></p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Address:</legend>
+          <p>Home no: <input type="text" name="home-no" id="" /></p>
+          <p>Locality: <input type="text" name="locality" id="locality" /></p>
+          <p>City: <input type="text" name="city" id="city" required/></p>
+          <p>State: <input type="text" name="state" id="state" required/></p>
+          <p>Country: <input type="text" name="country" id="country" required/></p>
+          <p>Pincode: <input type="text" name="pincode" id="pincode"required /></p>
+        </fieldset>
+
+        <p>Email:<input type="email" name="email" id="" required/></p>
+
+      </fieldset>
+      <fieldset>
+        <legend><h2>Payment Detail</h2></legend>
+        <p>Card Type:
+            <select name="card-type" id="card-type"required>
+                <option value="">Select Card Type</option>
+                <option value="visa">VISA</option>
+                <option value="master-card">Master Card</option>
+                <option value="rupay">Rupay</option>
+            </select>
+        </p>
+            Card No: <input type="number" name="car-no" id="card-no"required>
+        <p>
+            Expiry Date: <input type="date" name="expiry-date" id="expiry-date"required>
+        </p>
+        <p>
+            CVV: <input type="password" name="cvv" id="cvv"required>
+        </p>
+        <input type="submit" value="Pay Now"required>
+      </fieldset>
+    </form>
+  </body>
+</html>
